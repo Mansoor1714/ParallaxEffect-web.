@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper{
+    height: 100vh;
+    overflow-x:hidden;
+    overflow-y:auto;
+    perspective: 10px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+.background{
+    transform: translateZ(-50px) scale(6);
+}
+.foreground{
+    transform: translateZ(-20px) scale(3);
+  
+}
+.background,.foreground{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+.developer{
+    
+    height: 10px;
+    color: skyblue;
+   font-size: large;
+   text-decoration: wavy;
+   transform: translateX(15px);
+
+
+
+
+
+
+
+
+
+
+   
+   
+}
+#id{
+    background-color: aqua;
+}
+
+
+h1{
+    position:absolute;
+    top:5rem;
+    left: 20%;
+    font-size: 5rem;
+color: white;
+text-shadow: 0 0 10px rgba(0,0,0,0,3);
+  
+}
+section{
+    background-color: rgb(45,45,45);
+    color:white;
+    padding: 5rem 0;
+
+}
+.secheading{
+    font-size: 5rem;
+    padding:  0 10rem;
+}
+.text{
+    font-size: 1.5rem;
+    padding: 0  10rem;
+    margin: 5rem  0;
+}
+
+
+
+.bg{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+}
+.desc{
+    position: absolute;
+    background-color: white;
+    background-size: 10px;
+    padding: 0 5rem  1.5rem;
+    transform: translate(500px);
+   
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+.bg1{
+    background-image: url(photo_2024-06-23_22-47-46.jpg);
+   
+
+}
+.bg2{
+    background-image: url(photo_2024-06-23_22-48-39.jpg);
+    
+}
+.bg3{
+    background-image: url(photo_2024-06-23_22-47-59.jpg);
+}
+
+.sticky-image,a {
+    position: fixed;   /* Fixed position relative to viewport */
+    left: 10px;        /* Distance from the left edge of the viewport */
+    top: 50%;          /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    z-index: 1000;     /* Ensure it's above other content */
+}
+
+.sticky-image img ,a{
+    width: 200px;       /* Size of the image */
+    height: 200px;      /* Maintain aspect ratio */
+}
+a{
+    top:250px;
+    left:72px;
+    color: aqua;
+}
+#hen{
+    top:0px;
+    font-size: 7rem;
+    height: 110px;
+  
+    background-image:url("HD-wallpaper-pink-windows-11-logo-windows-11.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   
+
+}
